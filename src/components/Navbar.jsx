@@ -1,33 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 
-const links = [
-  { id: "about", label: "About" },
-  { id: "skills", label: "Skills" },
-  { id: "experience", label: "Experience" },
-  { id: "projects", label: "Projects" },
-  { id: "education", label: "Education" },
-  { id: "contact", label: "Contact" },
-];
+export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-export default function Navbar({ active }) {
-  const handleClick = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  };
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <nav className="navbar">
-      <div className="brand">Shreeya Bhimani</div>
-      <div className="nav-links">
-        {links.map((l) => (
-          <button
-            key={l.id}
-            className={`nav-link ${active === l.id ? "active" : ""}`}
-            onClick={() => handleClick(l.id)}
-          >
-            {l.label}
-          </button>
-        ))}
+      <div className="logo">My Resume</div>
+
+      {/* Hamburger Icon */}
+      <div className={`hamburger ${menuOpen ? "active" : ""}`} onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+
+      {/* Menu Items */}
+      <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+        <li><a href="#home" onClick={closeMenu}>Home</a></li>
+        <li><a href="#about" onClick={closeMenu}>About</a></li>
+        <li><a href="#skills" onClick={closeMenu}>Skills</a></li>
+        <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
+        <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
+        <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+      </ul>
     </nav>
   );
 }
