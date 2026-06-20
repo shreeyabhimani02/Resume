@@ -2,22 +2,22 @@ import React from "react";
 
 const projects = [
   { 
-    name: "Weather App",
-    tech: "React, CSS, OpenWeather API",
-    link: "https://weather-omega-mauve.vercel.app/ ",
-    desc: "Shows real-time weather info for searched locations."
+    name: "UpSkillr",
+    tech: "React.js, Node.js, Express.js, MongoDB Atlas",
+    link: "https://upskillr-omega.vercel.app",
+    desc: "- Built a full-stack online learning and skill development platform using the MERN stack, featuring JWT-based authentication, course management, progress tracking, certificate generation, and email notifications."
   },
   {
-    name: "Expense Tracker",
-    tech: "React, CSS",
-    link: "https://expense-tracker-delta-beryl.vercel.app/",
-    desc: "Tracks daily expenses with add, delete, and summary features."
+    name: "Event Registration App ",
+    tech: "MongoDB, Express, React, Node.js",
+    link: "https://event-0205.web.app/ )",
+    desc: "Built a MERN-stack based event management app with user authentication and event listing. "
   },
   {
-    name: "Operating Theater (OT) Scheduling System",
-    tech: "React, Firebase, CSS",
-    link: "https://operation-scheduler-one.vercel.app/",
-    desc: "Manages surgery schedules efficiently, allowing hospitals to track, add, and update OT bookings in real-time."
+    name: "Todsy ",
+    tech: "React.js, Node.js, Express, MongoDB Atlas",
+    link: "https://todoreact-coral.vercel.app/",
+    desc: "Built a full-stack To-Do Web Application using React.js, Node.js, Express, and MongoDB Atlas, featuring secure user authentication, task management, progress tracking, and an interactive calendar view."
   },
 ];
 
