@@ -4,7 +4,7 @@ const skills = [
   { name: "React", level: 90, note: "Hooks, Router, Context" },
   { name: "JavaScript", level: 100, note: "ES6+, async, DOM" },
   { name: "CSS", level: 80, note: "Flexbox, Grid, Animations" },
-  { name: "Machine Learning", level: 50, note: "Implemented regression and classification models with Python & scikit-learn" },
+  { name: "Machine Learning", level: 100, note: "Implemented regression and classification models with Python & scikit-learn" },
 ];
 
 export default function Skills() {
